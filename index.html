@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-<meta name="description" content="">
+<meta name="description" content="Out-Of-Distribution Generalization on Graphs: Paper List">
 <meta charset="UTF-8">
 <head>
     <title>Out-Of-Distribution Generalization on Graphs</title>
     <style type="text/css">
-              body {
+        body {
             font-family: Georgia, serif;
             color: #000;
             background-color: #fff;
             margin: 0;
             padding: 0;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         #layout-content {
             width: 90%;
@@ -21,7 +21,7 @@
         }
         #toptitle {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
         h1 {
             font-size: 2.2em;
@@ -31,26 +31,99 @@
             padding: 0.5em 0;
             border-bottom: 1px solid #ddd;
         }
-        </style>
+        /* 小标题样式 */
+        .section-title {
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin: 40px 0 25px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        /* 论文列表样式 */
+        .paper-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .paper-item {
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .paper-item:hover {
+            background-color: #e8f4fd;
+            transform: translateX(5px);
+        }
+        .paper-link {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .paper-link:hover {
+            color: #1abc9c;
+            text-decoration: underline;
+        }
+        /* 页脚样式优化 */
+        #footer {
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        #footer-text {
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 
 <body>
 <div id="layout-content">
-    <table>
-        <tbody>
-            <tr>
-                <td width="1000">
-                    <div id="toptitle">
-                        <h1>Out-Of-Distribution Generalization on Graphs: Paper List</h1>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="toptitle">
+        <h1>Out-Of-Distribution Generalization on Graphs: Paper List</h1>
+    </div>
+
+    <!-- OOD Node Detection 论文列表部分 -->
+    <h2 class="section-title">OOD Node Detection</h2>
+    <ul class="paper-list">
+        <!-- 示例论文 - 你可以替换成实际的42篇论文信息 -->
+        <li class="paper-item">
+            <a href="https://example.com/paper1" target="_blank" class="paper-link">
+                1. Paper Title 1: Out-of-Distribution Node Detection in Graph Neural Networks
+            </a>
+        </li>
+        <li class="paper-item">
+            <a href="https://example.com/paper2" target="_blank" class="paper-link">
+                2. Paper Title 2: Robust Node Classification Against Distribution Shifts
+            </a>
+        </li>
+        <li class="paper-item">
+            <a href="https://example.com/paper3" target="_blank" class="paper-link">
+                3. Paper Title 3: Graph OOD Detection with Contrastive Learning
+            </a>
+        </li>
+        <!-- 
+            在这里继续添加剩余的39篇论文，格式同上：
+            <li class="paper-item">
+                <a href="你的论文链接" target="_blank" class="paper-link">
+                    序号. 论文标题
+                </a>
+            </li>
+        -->
+        <li class="paper-item">
+            <a href="https://example.com/paper42" target="_blank" class="paper-link">
+                42. Paper Title 42: A Comprehensive Study on OOD Node Detection in Graphs
+            </a>
+        </li>
+    </ul>
 
     <div id="footer">
-        <div id="footer-text" style="text-align: center; margin-top: 80px; color: #666; font-size: 0.9em;">
-                    </div>
+        <div id="footer-text">
+            Out-Of-Distribution Generalization on Graphs - Paper Collection
+        </div>
     </div>
 </div>
 </body>
