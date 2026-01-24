@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
-<meta name="description" content="Out-Of-Distribution Generalization on Graphs: Paper List">
-<meta charset="UTF-8">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Out-Of-Distribution Generalization on Graphs: Paper List">
     <title>Out-Of-Distribution Generalization on Graphs</title>
     <style type="text/css">
         body {
@@ -18,6 +18,7 @@
             max-width: 1000px;
             margin: 40px auto 0;
             padding-bottom: 60px;
+            box-sizing: border-box; /* 新增：防止hover偏移导致滚动 */
         }
         #toptitle {
             text-align: center;
@@ -51,10 +52,12 @@
             border-radius: 4px;
             transition: all 0.3s ease;
             word-break: break-all;
+            position: relative; /* 新增：优化hover偏移 */
+            left: 0;
         }
         .paper-item:hover {
             background-color: #e8f4fd;
-            transform: translateX(5px);
+            left: 5px; /* 替换translateX，避免横向滚动 */
         }
         .paper-link {
             color: #2980b9;
@@ -82,322 +85,307 @@
         }
     </style>
 </head>
-
 <body>
 <div id="layout-content">
     <div id="toptitle">
         <h1>Out-Of-Distribution Generalization on Graphs: Paper List</h1>
     </div>
 
-    <!-- OOD Node Detection 论文列表部分 -->
+    <!-- OOD Node Detection 论文列表部分（修正序号从1开始） -->
     <h2 class="section-title">OOD Node Detection</h2>
     <ul class="paper-list">
          <li class="paper-item">
             <a href="https://arxiv.org/pdf/2110.03865" target="_blank" class="paper-link">
-                <span class="paper-num">2.</span>Stable prediction on graphs with agnostic distribution shift
+                <span class="paper-num">1.</span>Stable prediction on graphs with agnostic distribution shift
             </a>
         </li>
         <li class="paper-item">
             <a href="https://arxiv.org/pdf/2307.13055" target="_blank" class="paper-link">
-                <span class="paper-num">3.</span>MARIO: Model Agnostic Recipe for Improving OOD Generalization of Graph Contrastive Learning
+                <span class="paper-num">2.</span>MARIO: Model Agnostic Recipe for Improving OOD Generalization of Graph Contrastive Learning
             </a>
         </li>
         <li class="paper-item">
             <a href="https://proceedings.mlr.press/v97/ma19a/ma19a.pdf" target="_blank" class="paper-link">
-                <span class="paper-num">4.</span>Disentangled Graph Convolutional Networks
+                <span class="paper-num">3.</span>Disentangled Graph Convolutional Networks
             </a>
         </li>
         <li class="paper-item">
             <a href="https://ojs.aaai.org/index.php/AAAI/article/download/5929/5785" target="_blank" class="paper-link">
-                <span class="paper-num">5.</span>Independence Promoted Graph Disentangled Networks
+                <span class="paper-num">4.</span>Independence Promoted Graph Disentangled Networks
             </a>
         </li>
         <li class="paper-item">
             <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/2857242c9e97de339ce642e75b15ff24-Paper-Conference.pdf" target="_blank" class="paper-link">
-                <span class="paper-num">6.</span>Dynamic graph neural networks under spatio-temporal distribution shift
+                <span class="paper-num">5.</span>Dynamic graph neural networks under spatio-temporal distribution shift
             </a>
         </li>
         <li class="paper-item">
             <a href="https://arxiv.org/html/2503.19382v1" target="_blank" class="paper-link">
-                <span class="paper-num">7.</span>Environment-aware Dynamic Graph Learning for Out-of-Distribution Generalization
+                <span class="paper-num">6.</span>Environment-aware Dynamic Graph Learning for Out-of-Distribution Generalization
             </a>
         </li>
         <li class="paper-item">
             <a href="https://dl.acm.org/doi/10.1145/3604427" target="_blank" class="paper-link">
-                <span class="paper-num">8.</span>Invariant Node Representation Learning under Distribution Shifts with Multiple Latent Environments
+                <span class="paper-num">7.</span>Invariant Node Representation Learning under Distribution Shifts with Multiple Latent Environments
             </a>
         </li>
         <li class="paper-item">
             <a href="https://arxiv.org/abs/2403.05026" target="_blank" class="paper-link">
-                <span class="paper-num">9.</span>Spectral Invariant Learning for Dynamic Graphs under Distribution Shifts
+                <span class="paper-num">8.</span>Spectral Invariant Learning for Dynamic Graphs under Distribution Shifts
             </a>
         </li>
         <li class="paper-item">
             <a href="https://dl.acm.org/doi/10.1145/3580305.3599355" target="_blank" class="paper-link">
-                <span class="paper-num">10.</span>FLOOD: A Flexible Invariant Learning Framework for Out-of-Distribution Generalization on Graphs
+                <span class="paper-num">9.</span>FLOOD: A Flexible Invariant Learning Framework for Out-of-Distribution Generalization on Graphs
             </a>
         </li>
         <li class="paper-item">
             <a href="https://arxiv.org/pdf/2402.08228" target="_blank" class="paper-link">
-                <span class="paper-num">11.</span>Investigating Out-of-Distribution Generalization of GNNs: An Architecture Perspective
+                <span class="paper-num">10.</span>Investigating Out-of-Distribution Generalization of GNNs: An Architecture Perspective
             </a>
         </li>
         <li class="paper-item">
             <a href="https://arxiv.org/abs/2312.04693" target="_blank" class="paper-link">
-                <span class="paper-num">12.</span>GraphMETRO: Mitigating Complex Graph Distribution Shifts via Mixture of Aligned Experts
+                <span class="paper-num">11.</span>GraphMETRO: Mitigating Complex Graph Distribution Shifts via Mixture of Aligned Experts
             </a>
         </li>
         <li class="paper-item">
             <a href="https://openreview.net/pdf?id=EpGtAOr4vs" target="_blank" class="paper-link">
-                <span class="paper-num">13.</span>Out-of-Distribution Generalized Graph Anomaly Detection with Homophily-aware Environment Mixup
+                <span class="paper-num">12.</span>Out-of-Distribution Generalized Graph Anomaly Detection with Homophily-aware Environment Mixup
             </a>
         </li>
         <li class="paper-item">
             <a href="https://dl.acm.org/doi/pdf/10.1145/3637528.3671917" target="_blank" class="paper-link">
-                <span class="paper-num">14.</span>Graph Condensation for Open-World Graph Learning
+                <span class="paper-num">13.</span>Graph Condensation for Open-World Graph Learning
             </a>
         </li>
         <li class="paper-item">
             <a href="https://dl.acm.org/doi/pdf/10.1145/3696410.3714849" target="_blank" class="paper-link">
-                <span class="paper-num">15.</span>Graph Representation Learning via Causal Diffusion for Out-of-Distribution Recommendation
+                <span class="paper-num">14.</span>Graph Representation Learning via Causal Diffusion for Out-of-Distribution Recommendation
             </a>
         </li>
         <li class="paper-item">
             <a href="https://dl.acm.org/doi/pdf/10.1145/3589334.3645604" target="_blank" class="paper-link">
-                <span class="paper-num">16.</span>Graph Out-of-Distribution Generalization via Causal Intervention
+                <span class="paper-num">15.</span>Graph Out-of-Distribution Generalization via Causal Intervention
             </a>
         </li>
         <li class="paper-item">
             <a href="https://proceedings.neurips.cc/paper_files/paper/2020/file/fb4c835feb0a65cc39739320d7a51c02-Paper.pdf" target="_blank" class="paper-link">
-                <span class="paper-num">17.</span>Graph Random Neural Networks for Semi-Supervised Learning on Graphs
+                <span class="paper-num">16.</span>Graph Random Neural Networks for Semi-Supervised Learning on Graphs
             </a>
         </li>
         <li class="paper-item">
             <a href="https://proceedings.neurips.cc/paper/2021/file/9e7ba617ad9e69b39bd0c29335b79629-Paper.pdf" target="_blank" class="paper-link">
-                <span class="paper-num">18.</span>Metropolis-Hastings Data Augmentation for Graph Neural Networks
+                <span class="paper-num">17.</span>Metropolis-Hastings Data Augmentation for Graph Neural Networks
             </a>
         </li>
         <li class="paper-item">
             <a href="https://ojs.aaai.org/index.php/AAAI/article/view/17315" target="_blank" class="paper-link">
-                <span class="paper-num">19.</span>Data Augmentation for Graph Neural Networks
+                <span class="paper-num">18.</span>Data Augmentation for Graph Neural Networks
             </a>
         </li>
         <li class="paper-item">
             <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/4d4a3b6a34332d80349137bcc98164a5-Paper-Conference.pdf" target="_blank" class="paper-link">
-                <span class="paper-num">20.</span>Knowledge Distillation Improves Graph Structure Augmentation for Graph Neural Networks
+                <span class="paper-num">19.</span>Knowledge Distillation Improves Graph Structure Augmentation for Graph Neural Networks
             </a>
         </li>
         <li class="paper-item">
             <a href="https://proceedings.mlr.press/v162/liu22s/liu22s.pdf" target="_blank" class="paper-link">
-                <span class="paper-num">21.</span>Local Augmentation for Graph Neural Networks
+                <span class="paper-num">20.</span>Local Augmentation for Graph Neural Networks
             </a>
         </li>
         <li class="paper-item">
             <a href="https://arxiv.org/pdf/2202.02466" target="_blank" class="paper-link">
-                <span class="paper-num">22.</span>Handling distribution shifts on graphs: An invariance perspective
+                <span class="paper-num">21.</span>Handling distribution shifts on graphs: An invariance perspective
             </a>
         </li>
         <li class="paper-item">
             <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/08342dc6ab69f23167b4123086ad4d38-Paper-Conference.pdf" target="_blank" class="paper-link">
-                <span class="paper-num">23.</span>Revisiting Score Propagation in Graph Out-of-Distribution Detection
+                <span class="paper-num">22.</span>Revisiting Score Propagation in Graph Out-of-Distribution Detection
             </a>
         </li>
         <li class="paper-item">
             <a href="https://dl.acm.org/doi/pdf/10.1145/3649507" target="_blank" class="paper-link">
-                <span class="paper-num">24.</span>A Fully Test-time Training Framework for Semi-supervised Node Classification on Out-of-Distribution Graphs
+                <span class="paper-num">23.</span>A Fully Test-time Training Framework for Semi-supervised Node Classification on Out-of-Distribution Graphs
             </a>
         </li>
         <li class="paper-item">
             <a href="https://dl.acm.org/doi/pdf/10.1145/3589334.3645598" target="_blank" class="paper-link">
-                <span class="paper-num">25.</span>Distributionally Robust Graph-based Recommendation System
+                <span class="paper-num">24.</span>Distributionally Robust Graph-based Recommendation System
             </a>
         </li>
         <li class="paper-item">
-            <a href="https://arxiv.org/pdf/2502.05780?" target="_blank" class="paper-link">
-                <span class="paper-num">26.</span>Gold: Graph out-of-distribution detection via implicit adversarial latent generation
+            <a href="https://arxiv.org/pdf/2502.05780" target="_blank" class="paper-link"> <!-- 移除多余的? -->
+                <span class="paper-num">25.</span>Gold: Graph out-of-distribution detection via implicit adversarial latent generation
             </a>
         </li>
         <li class="paper-item">
             <a href="https://openreview.net/pdf?id=JWmfbzw8ur" target="_blank" class="paper-link">
-                <span class="paper-num">27.</span>Harnessing Feature Resonance under Arbitrary Target Alignment for Out-of-Distribution Node Detection
+                <span class="paper-num">26.</span>Harnessing Feature Resonance under Arbitrary Target Alignment for Out-of-Distribution Node Detection
             </a>
         </li>
         <li class="paper-item">
             <a href="https://arxiv.org/pdf/2302.02914" target="_blank" class="paper-link">
-                <span class="paper-num">28.</span>Energy-based Out-of-Distribution Detection for Graph Neural Networks
+                <span class="paper-num">27.</span>Energy-based Out-of-Distribution Detection for Graph Neural Networks
             </a>
         </li>
         <li class="paper-item">
             <a href="https://ojs.aaai.org/index.php/AAAI/article/view/33718" target="_blank" class="paper-link">
-                <span class="paper-num">29.</span>ML-GOOD: Towards Multi-Label Graph Out-Of-Distribution Detection
+                <span class="paper-num">28.</span>ML-GOOD: Towards Multi-Label Graph Out-Of-Distribution Detection
             </a>
         </li>
         <li class="paper-item">
             <a href="https://www.ijcai.org/proceedings/2025/0722.pdf" target="_blank" class="paper-link">
-                <span class="paper-num">30.</span>All Roads Lead to Rome: Exploring Edge Distribution Shifts for Heterophilic Graph Learning
+                <span class="paper-num">29.</span>All Roads Lead to Rome: Exploring Edge Distribution Shifts for Heterophilic Graph Learning
             </a>
         </li>
         <li class="paper-item">
             <a href="https://openreview.net/pdf?id=gPPPfwU4jj" target="_blank" class="paper-link">
-                <span class="paper-num">31.</span>Geometric Logit Decoupling for Energy-Based Graph Out-of-distribution Detection
+                <span class="paper-num">30.</span>Geometric Logit Decoupling for Energy-Based Graph Out-of-distribution Detection
             </a>
         </li>
         <li class="paper-item">
             <a href="https://www.ijcai.org/proceedings/2025/0786.pdf" target="_blank" class="paper-link">
-                <span class="paper-num">32.</span>Graph OOD Detection via Plug-and-Play Energy-based Evaluation and Propagation
+                <span class="paper-num">31.</span>Graph OOD Detection via Plug-and-Play Energy-based Evaluation and Propagation
             </a>
         </li>
         <li class="paper-item">
             <a href="https://dl.acm.org/doi/pdf/10.1145/3539597.3570446" target="_blank" class="paper-link">
-                <span class="paper-num">33.</span>HyperGOOD: Towards Out-of-Distribution Detection in Hypergraphs
+                <span class="paper-num">32.</span>HyperGOOD: Towards Out-of-Distribution Detection in Hypergraphs
             </a>
         </li>
         <li class="paper-item">
             <a href="https://dl.acm.org/doi/pdf/10.1145/3637528.3671939" target="_blank" class="paper-link">
-                <span class="paper-num">34.</span>An Energy-centric Framework for Category-free Out-of-distribution Node Detection in Graphs
+                <span class="paper-num">33.</span>An Energy-centric Framework for Category-free Out-of-distribution Node Detection in Graphs
             </a>
         </li>
         <li class="paper-item">
             <a href="https://openreview.net/pdf?id=p1TBYyqy8v" target="_blank" class="paper-link">
-                <span class="paper-num">35.</span>SPREADING OUT-OF-DISTRIBUTION DETECTION ON GRAPHS
+                <span class="paper-num">34.</span>Spreading out-of-distribution detection on graphs
             </a>
         </li>
         <li class="paper-item">
-            <a href="https://arxiv.org/pdf/2502.17912?" target="_blank" class="paper-link">
-                <span class="paper-num">36.</span>Decoupled Graph Energy-based Model for Node Out-of-Distribution Detection on Heterophilic Graphs
+            <a href="https://arxiv.org/pdf/2502.17912" target="_blank" class="paper-link"> <!-- 移除多余的? -->
+                <span class="paper-num">35.</span>Decoupled Graph Energy-based Model for Node Out-of-Distribution Detection on Heterophilic Graphs
             </a>
         </li>
         <li class="paper-item">
-            <a href="https://arxiv.org/pdf/2504.13429?" target="_blank" class="paper-link">
-                <span class="paper-num">37.</span>Bounded and Uniform Energy-based Out-of-distribution Detection for Graphs
+            <a href="https://arxiv.org/pdf/2504.13429" target="_blank" class="paper-link"> <!-- 移除多余的? -->
+                <span class="paper-num">36.</span>Bounded and Uniform Energy-based Out-of-distribution Detection for Graphs
             </a>
         </li>
         <li class="paper-item">
             <a href="https://proceedings.neurips.cc/paper/2021/file/08425b881bcde94a383cd258cea331be-Paper.pdf" target="_blank" class="paper-link">
-                <span class="paper-num">38.</span>Subgroup Generalization and Fairness of Graph Neural Networks
+                <span class="paper-num">37.</span>Subgroup Generalization and Fairness of Graph Neural Networks
             </a>
         </li>
         <li class="paper-item">
             <a href="https://dl.acm.org/doi/pdf/10.1145/3292500.3330956" target="_blank" class="paper-link">
-                <span class="paper-num">39.</span>Stability and Generalization of Graph Convolutional Neural Networks
+                <span class="paper-num">38.</span>Stability and Generalization of Graph Convolutional Neural Networks
             </a>
         </li>
         <li class="paper-item">
             <a href="https://aclanthology.org/2025.findings-acl.1001.pdf" target="_blank" class="paper-link">
-                <span class="paper-num">40.</span>Out-of-Distribution Detection via LLM-Guided Outlier Generation for Text-attributed Graph
+                <span class="paper-num">39.</span>Out-of-Distribution Detection via LLM-Guided Outlier Generation for Text-attributed Graph
             </a>
         </li>
         <li class="paper-item">
             <a href="https://ojs.aaai.org/index.php/AAAI/article/view/33463" target="_blank" class="paper-link">
-                <span class="paper-num">41.</span>TRACI: A Data-centric Approach for Multi-Domain Generalization on Graphs
+                <span class="paper-num">40.</span>TRACI: A Data-centric Approach for Multi-Domain Generalization on Graphs
             </a>
         </li>
         <li class="paper-item">
             <a href="https://ojs.aaai.org/index.php/AAAI/article/view/25569" target="_blank" class="paper-link">
-                <span class="paper-num">42.</span>Multi-Domain Generalized Graph Meta Learning
+                <span class="paper-num">41.</span>Multi-Domain Generalized Graph Meta Learning
             </a>
         </li>
     </ul>
-<h2 class="section-title">Open-set Node Classification</h2>
+
+    <h2 class="section-title">Open-set Node Classification</h2>
     <ul class="paper-list">
-        <!-- 第1篇 -->
         <li class="paper-item">
             <a href="https://ieeexplore.ieee.org/document/10415791" target="_blank" class="paper-link">
                 <span class="paper-num">1.</span>Graph Open-Set Recognition via Entropy Message Passing
             </a>
         </li>
-        <!-- 第2篇 -->
         <li class="paper-item">
             <a href="https://arxiv.org/abs/2305.06766" target="_blank" class="paper-link">
                 <span class="paper-num">2.</span>G2Pxy: Generative Open-Set Node Classification on Graphs with Proxy Unknowns
             </a>
         </li>
-        <!-- 第3篇 -->
         <li class="paper-item">
             <a href="https://arxiv.org/pdf/2303.15015" target="_blank" class="paper-link">
                 <span class="paper-num">3.</span>Towards Open Temporal Graph Neural Networks
             </a>
         </li>
-        <!-- 第4篇 -->
         <li class="paper-item">
             <a href="https://dl.acm.org/doi/pdf/10.1145/3607144" target="_blank" class="paper-link">
                 <span class="paper-num">4.</span>Open-World Graph Active Learning for Node Classification
             </a>
         </li>
-        <!-- 第5篇 -->
         <li class="paper-item">
             <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/79ba1b827d3fc58e129d1cbfc8ff69f2-Paper-Conference.pdf" target="_blank" class="paper-link">
                 <span class="paper-num">5.</span>EGonc: Energy-based Open-Set Node Classification with substitute Unknowns
             </a>
         </li>
-        <!-- 第6篇 -->
         <li class="paper-item">
-            <a href="https://arxiv.org/pdf/2407.17816?" target="_blank" class="paper-link">
+            <a href="https://arxiv.org/pdf/2407.17816" target="_blank" class="paper-link"> <!-- 移除多余的? -->
                 <span class="paper-num">6.</span>NC2D: Novel Class Discovery for Node Classification
             </a>
         </li>
-        <!-- 第7篇 -->
         <li class="paper-item">
             <a href="https://research-repository.griffith.edu.au/server/api/core/bitstreams/c762cac6-5589-4000-ac0d-2c061daf6fa5/content" target="_blank" class="paper-link">
                 <span class="paper-num">7.</span>CONC: Complex-noise-resistant Open-set Node Classification with Adaptive Noise Detection
             </a>
         </li>
-        <!-- 第8篇 -->
         <li class="paper-item">
             <a href="https://ojs.aaai.org/index.php/AAAI/article/download/28788/29509" target="_blank" class="paper-link">
                 <span class="paper-num">8.</span>ROGP L: Robust Open-Set Graph Learning via Region-Based Prototype Learning
             </a>
         </li>
-        <!-- 第9篇 -->
         <li class="paper-item">
             <a href="https://arxiv.org/pdf/2311.06835" target="_blank" class="paper-link">
                 <span class="paper-num">9.</span>Open-Set Graph Anomaly Detection via Normal Structure Regularisation
             </a>
         </li>
-        <!-- 第10篇 -->
         <li class="paper-item">
             <a href="https://arxiv.org/pdf/2502.10967" target="_blank" class="paper-link">
                 <span class="paper-num">10.</span>Open-Set Cross-Network Node Classification via Unknown-Excluded Adversarial Graph Domain Alignment
             </a>
         </li>
-        <!-- 第11篇 -->
         <li class="paper-item">
             <a href="https://openreview.net/pdf?id=KOGHdQlLcv" target="_blank" class="paper-link">
                 <span class="paper-num">11.</span>Towards Understanding Parametric Generalized Category Discovery on Graphs
             </a>
         </li>
-        <!-- 第12篇 -->
         <li class="paper-item">
             <a href="https://dl.acm.org/doi/pdf/10.1145/3746027.3754822" target="_blank" class="paper-link">
                 <span class="paper-num">12.</span>Towards Effective Open-set Graph Class-incremental Learning
             </a>
         </li>
-        <!-- 第13篇 -->
         <li class="paper-item">
             <a href="https://arxiv.org/pdf/2510.18363" target="_blank" class="paper-link">
                 <span class="paper-num">13.</span>Towards Unsupervised Open-Set Graph Domain Adaptation via Dual Reprogramming
             </a>
         </li>
-        <!-- 第14篇 -->
         <li class="paper-item">
             <a href="https://arxiv.org/pdf/2505.13989" target="_blank" class="paper-link">
                 <span class="paper-num">14.</span>When LLMs meet open-world graph learning: a new perspective for unlabeled data uncertainty
             </a>
         </li>
-        <!-- 第15篇 -->
         <li class="paper-item">
             <a href="https://ink.library.smu.edu.sg/sis_research/7479/" target="_blank" class="paper-link">
                 <span class="paper-num">15.</span>End-to-End Open-Set Semi-Supervised Node Classification with Out-of-Distribution Detection
             </a>
         </li>
-        <!-- 第16篇 -->
         <li class="paper-item">
             <a href="https://ieeexplore.ieee.org/abstract/document/9338284" target="_blank" class="paper-link">
                 <span class="paper-num">16.</span>Openwgl: Open-world graph learning.
             </a>
         </li>
     </ul>
-<h2 class="section-title">Zero-shot Node Classification</h2>
+
+    <h2 class="section-title">Zero-shot Node Classification</h2>
     <ul class="paper-list">
         <li class="paper-item">
             <a href="https://arxiv.org/abs/2106.08022" target="_blank" class="paper-link">
@@ -500,6 +488,7 @@
             </a>
         </li>
     </ul>
+
     <div id="footer">
         <div id="footer-text">
             Out-Of-Distribution Generalization on Graphs - Paper Collection
